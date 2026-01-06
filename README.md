@@ -11,6 +11,8 @@
 5. 将srun-login.service放到/etc/systemd/system下
 然后运行：
 ```bash
+sudo chmod +x /usr/local/bin/bitsrun
+sudo chmod +x /usr/local/bin/srun-login.sh
 sudo systemctl daemon-reload
 sudo systemctl enable srun-login.service
 sudo systemctl start srun-login.serivice

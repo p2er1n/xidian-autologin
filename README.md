@@ -1,5 +1,6 @@
 # xidian-autologin
 西电校园网Linux下自动登录
+用到的工具：https://github.com/Mmx233/BitSrunLoginGo
 
 ## 安装方法
 1. 将bitsrun放到/usr/local/bin下

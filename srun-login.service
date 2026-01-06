@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto login campus network(Srun)
+After=network-online.target
+nss-lookup.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/srun-login.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
